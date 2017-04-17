@@ -2,7 +2,9 @@ class JobsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy]
 
   def index
-    @jobs = Job.where(:is_hidden => false) # only show public jobs
+    @jobs = Job.where(:is_hidden => false).order("created_at DESC")
+    # only public posts are shown
+    # sort by created_at
   end
 
   def show
