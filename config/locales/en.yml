@@ -1,23 +1,23 @@
 en:
 
-# for testing
-  hello: "Hello world"
+#--------- landing page---------
+  logo_title: "Quick Hunt"
+  slogan: Quick Hunt's mission is to remove all your worries, fear, stress and pains of job search.
 
-# landing page
+# footer
   copyright: "Copyright ©2016"
   author: "Design by Anndo"
 
-# navbar
-  logo_title: "Quick Hunt"
+#--------- navbar---------
   sign_up: "Sign Up"
   login: "Login"
   greeting: "Hi, "
 
-# navbar dropdown menu
+  # navbar dropdown menu
   admin_panel: "Admin Panel"
   log_out: "Log Out"
 
-# jobs index
+#--------- jobs index---------
   # table head
   th_position: "Position"
   th_count: "Count"
@@ -36,7 +36,7 @@ en:
   # sort menu
   btn_sort_latest: "Lastest"
 
-# form
+#--------- form---------
   # form headings
   hd_new: "Create a Job"
   hd_edit: "Edit a Job"
