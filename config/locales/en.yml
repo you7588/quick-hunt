@@ -1,23 +1,63 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
+
+# for testing
   hello: "Hello world"
+
+# landing page
+  copyright: "Copyright ©2016"
+  author: "Design by Anndo"
+
+# navbar
+  logo_title: "Quick Hunt"
+  sign_up: "Sign Up"
+  login: "Login"
+  greeting: "Hi, "
+
+# navbar dropdown menu
+  admin_panel: "Admin Panel"
+  log_out: "Log Out"
+
+# jobs index
+  # table head
+  th_position: "Position"
+  th_count: "Count"
+  th_salary_min: "Salary Min."
+  th_salary_max: "Salary Max."
+  th_manage: "Manage"
+  th_published: "Posted Date/Time"
+  # buttons
+  btn_add: "Add a Job"
+  btn_sort: "Sort"
+  btn_hide: "Hide"
+  btn_publish: "Publish"
+  btn_edit: "Edit"
+  btn_delete: "Delete"
+
+  # sort menu
+  btn_sort_latest: "Lastest"
+
+# form
+  # form headings
+  hd_new: "Create a Job"
+  hd_edit: "Edit a Job"
+
+  # edit/new form
+  f_title: "Title"
+  f_description: "Description"
+  f_salary_min: "Salary Min."
+  f_salary_max: "Salary Max."
+  f_email: "Contact Emain"
+  f_job_status: "Hidden"
+  f_submit: "Submit"
+  f_update: "Update"
+  # resume form
+  f_content: "Content"
+  f_attachment: "Attachment"
+  f_send: "Send"
+
+  # show
+  btn_apply: "Apply Now"
+
+  # resume
+  btn_download: "Download Resume"
+  attachment_status: "No attachment"

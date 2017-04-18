@@ -14,12 +14,12 @@
     </div>
 
     <hr>
-    
+
     <% if resume.attachment.present? %>
       <i class="fa fa-paperclip"> </i>
-      <%= link_to("Download Resume", resume.attachment_url) %>
+      <%= link_to(t('btn_download'), resume.attachment_url) %>
     <% else %>
-       No Attachment
+       <%= t('attachment_status') %>
     <% end %>
   </div>
 </div>

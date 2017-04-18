@@ -1,5 +1,5 @@
 <div class="pull-right">
-  <%= link_to("Add a Job", new_job_path, :class => "btn btn-default" ) %>
+  <%= link_to(t('btn_add'), new_job_path, :class => "btn btn-default" ) %>
 </div>
 
 <!-- dropdown menu for sorting -->
@@ -11,45 +11,44 @@
 
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
     <li>
-      <%= link_to("Salary Min.", jobs_path(:order => "by_lower_bound")) %>
+      <%= link_to( t('th_salary_min'), jobs_path(:order => "by_lower_bound")) %>
     </li>
     <li>
-        <%= link_to("Salary Max.", jobs_path(:order => "by_upper_bound")) %>
+        <%= link_to( t('th_salary_max'), jobs_path(:order => "by_upper_bound")) %>
     </li>
     <li>
-      <%= link_to("Latest", jobs_path ) %>
+      <%= link_to( t('btn_sort_latest'), jobs_path ) %>
     </li>
   </ul>
 </div>
 
 <!-- table -->
 <table class="table table-boldered">
-    <thead>
-        <tr>
-            <td>Position</td>
-            <td>Salary Min.</td>
-            <td>Salery Max.</td>
-            <td>Published</td>
-        </tr>
+  <thead>
+    <tr>
+      <td><%= t('th_position') %></td>
+      <td><%= t('th_salary_min') %></td>
+      <td><%= t('th_salary_max') %></td>
+      <td><%= t('th_published') %></td>
+    </tr>
 
-    </thead>
-    <tbody>
-        <% @jobs.each do |job| %>
-        <tr>
-            <td>
-                <%= link_to(job.title, job_path(job)) %>
-            </td>
-            <td>
-                <%= job.wage_lower_bound %>
-            </td>
-            <td>
-                <%= job.wage_upper_bound %>
-            </td>
-            <td>
-                <%= job.created_at %>
-            </td>
-        </tr>
-        <% end %>
-    </tbody>
-
+  </thead>
+  <tbody>
+    <% @jobs.each do |job| %>
+      <tr>
+        <td>
+            <%= link_to(job.title, job_path(job)) %>
+        </td>
+        <td>
+            <%= job.wage_lower_bound %>
+        </td>
+        <td>
+            <%= job.wage_upper_bound %>
+        </td>
+        <td>
+            <%= job.created_at %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>

@@ -19,5 +19,11 @@ Rails.application.routes.draw do
     end
   end
 
-  root 'jobs#index'
+  # landing page
+  resources :welcome do
+
+  end
+
+  root 'welcome#index'
+
 end

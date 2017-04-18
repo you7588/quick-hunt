@@ -1,18 +1,18 @@
-<div class="pull-right">
-  <%= link_to("Add a job", new_admin_job_path, :class => "btn btn-default" ) %>
+<div class='pull-right'>
+  <%= link_to(t('btn_add'), new_admin_job_path, :class => 'btn btn-default' ) %>
 </div>
 
 <br><br>
 
-<table class="table table-boldered">
+<table class='table table-boldered'>
   <thead>
       <tr>
-        <td>Position</td>
-        <td>Count</td>
-        <td>Salary Min.</td>
-        <td>Salery Max.</td>
-        <td>Manage</td>
-        <td>Published</td>
+        <td><%= t('th_position') %></td>
+        <td><%= t('th_count') %></td>
+        <td><%= t('th_salary_min') %></td>
+        <td><%= t('th_salary_max') %></td>
+        <td><%= t('th_manage') %></td>
+        <td><%= t('th_published') %></td>
       </tr>
   </thead>
 
@@ -30,15 +30,15 @@
       <td> <%= job.wage_upper_bound %> </td>
 
       <td>
-          <%= link_to("Edit", edit_admin_job_path(job)) %>
+          <%= link_to(t('btn_edit'), edit_admin_job_path(job)) %>
           |
-          <%= link_to("Destroy", admin_job_path(job), :method => :delete, :data => { :confirm => "Are you sure?" }) %>
+          <%= link_to(t('btn_delete'), admin_job_path(job), :method => :delete, :data => { :confirm => 'Are you sure?' }) %>
 
           |
       <% if job.is_hidden %>
-        <%= link_to("Publish", publish_admin_job_path(job) , :method => :post, :class => "btn btn-xs btn-default") %>
+        <%= link_to(t('btn_publish'), publish_admin_job_path(job) , :method => :post, :class => 'btn btn-xs btn-default') %>
       <% else %>
-        <%= link_to("Hide", hide_admin_job_path(job), :method => :post,  :class => "btn btn-xs btn-default") %>
+        <%= link_to(t('btn_hide'), hide_admin_job_path(job), :method => :post,  :class => 'btn btn-xs btn-default') %>
           <% end %>
       </td>
 
