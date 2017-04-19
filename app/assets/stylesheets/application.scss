@@ -121,6 +121,23 @@
 }
 
 //---------Features---------
+.caption {
+  margin: 30px;
+  text-align: center;
+  top: 20px;
+}
+
+.thumbnail {
+    border: 0 none;
+    box-shadow: none;
+    margin-top: 60px;
+}
+
+  .img-thumbnail {
+    border: 0 none;
+    width: 100px; //定製圖片寬度
+    height: 100px; //定製圖片高度
+}
 
 .content-section-a {
     padding: 50px 0;
