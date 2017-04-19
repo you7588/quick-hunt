@@ -27,6 +27,12 @@ en:
   sec_heading_hired: "TOP BUSINESSES HIRING ON QUICK HUNT"
   sec_text_hired: "Job seekers on Quick Hunt have been hired by:"
 
+  sec_heading_act: ""
+  sec_text_act: ""
+
+
+  # buttons
+  btn_act: "Find Yours Now"
 
 #--------- navbar---------
   sign_up: "Sign Up"
