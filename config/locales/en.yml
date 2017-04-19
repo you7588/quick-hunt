@@ -2,14 +2,14 @@ en:
 
 #--------- landing page---------
   logo_title: "Quick Hunt"
-  slogan: Quick Hunt's mission is to remove all your worries, fear, stress and pains of job search.
+  slogan: "Quick Hunt's mission is to remove all your worries, fear, stress and pains of job search. Since launch, we have helped hundreds and thousands of people find jobs. Our goal is simple: provide most relevant and up-to-date information and help as many people as possible."
 
 # footer
   copyright: "Copyright ©2016"
   author: "Design by Anndo"
 
 # content
-  #section heading
+  # section heading
   sec_heading_1: "FIND"
   sec_heading_2: "HIRE"
   sec_heading_3: "WORK"
@@ -19,6 +19,14 @@ en:
   sec_text_2: "Browse profiles, reviews, and proposals then interview top candidates. Hire a favorite and begin your project."
 
   sec_text_3: "Use the Upwork platform to chat, share files, and collaborate from your desktop or on the go."
+
+  # companys
+  sec_heading_cooperation: "OUR PARTNERS"
+  sec_text_cooperation: "To offer best job oppotunities, we work closely with top companies like:"
+
+  sec_heading_hired: "TOP BUSINESSES HIRING ON QUICK HUNT"
+  sec_text_hired: "Job seekers on Quick Hunt have been hired by:"
+
 
 #--------- navbar---------
   sign_up: "Sign Up"
