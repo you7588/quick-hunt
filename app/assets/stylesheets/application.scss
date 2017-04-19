@@ -83,7 +83,7 @@
     }
 }
 
-//---------Content---------
+//---------Features---------
 
 .content-section-a {
     padding: 50px 0;
@@ -94,22 +94,6 @@
     padding: 50px 0;
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
-}
-
-.content-section-c {
-    text-align: center;
-    padding: 50px 0;
-    border-top: 1px solid #e7e7e7;
-    border-bottom: 1px solid #e7e7e7;
-}
-
-.logo {
-    margin: 15px;
-}
-
-.logo-mini {
-    margin: 10px;
-    padding: 10px
 }
 
 .section-heading-spacer {
@@ -130,6 +114,23 @@
 hr {
     margin-top: 2.5em;
     margin-bottom: 2.5em;
+}
+
+//---------Company List---------
+.content-section-c {
+    text-align: center;
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.logo {
+    margin: 15px;
+}
+
+.logo-mini {
+    margin: 10px;
+    padding: 10px
 }
 
 //---------Footer---------
