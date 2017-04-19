@@ -53,12 +53,18 @@ en:
   hd_new: "Create a Job"
   hd_edit: "Edit a Job"
 
+  # login & signup form
+  f_account: "Email"
+  f_password: "Password"
+  f_confirm_password: "Password Confirmation"
+  f_remeber: "Remeber Me"
+
   # edit/new form
   f_title: "Title"
   f_description: "Description"
   f_salary_min: "Salary Min."
   f_salary_max: "Salary Max."
-  f_email: "Contact Emain"
+  f_email: "Contact Email"
   f_job_status: "Hidden"
   f_submit: "Submit"
   f_update: "Update"
