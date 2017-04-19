@@ -9,6 +9,11 @@ en:
   author: "Design by Anndo"
 
 # content
+
+  # features
+  sec_heading_features: "WHY QUICK HUNT"
+  sec_text_features: "We find the right job for you."
+
   # section heading
   sec_heading_1: "FAST AND EASY"
   sec_heading_2: "OPPOTUNITIES"

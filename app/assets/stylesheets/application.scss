@@ -83,7 +83,7 @@
 
 .jumbotron h1, .jumbotron .h1 {
     font-family: Arial Black;
-    text-align: justify;//文字左對齊
+    text-align: justify;
     color: #EEEEEE; //字體顏色
     padding: 50px 20px 0;//上50px，左右20px，下0
 }
@@ -95,7 +95,7 @@
     max-width: 700px;//最大寬度
     background-color: rgba(250, 250, 250, 0.39);//背景顏色含透明度
     padding: 20px;//上下左右padding為20px
-    text-align:justify;//文字左對齊
+    text-align:justify;
     color: #EEEEEE;//字體顏色
     border-bottom-right-radius: 3px;//右下角圓邊
     border-bottom-left-radius: 3px;//左下角圓邊
@@ -135,16 +135,18 @@
 
   .img-thumbnail {
     border: 0 none;
-    width: 100px; //定製圖片寬度
-    height: 100px; //定製圖片高度
+    width: 150px; //定製圖片寬度
+    height: 150px; //定製圖片高度
 }
 
 .content-section-a {
+    text-align: center;
     padding: 50px 0;
     background-color: #f8f8f8;
 }
 
 .content-section-b {
+    text-align: center;
     padding: 50px 0;
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
@@ -172,7 +174,6 @@ hr {
     margin-top: 3em;
     margin-bottom: 3em;
 }
-
 
 //---------Testomonial---------
 #testimony {
