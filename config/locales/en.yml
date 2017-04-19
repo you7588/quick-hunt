@@ -28,11 +28,11 @@ en:
   sec_text_hired: "Job seekers on Quick Hunt have been hired by:"
 
   sec_heading_act: ""
-  sec_text_act: ""
+  sec_text_act: "Be the next career success story."
 
 
   # buttons
-  btn_act: "Find Yours Now"
+  btn_act: "Act Now"
 
 #--------- navbar---------
   sign_up: "Sign Up"
