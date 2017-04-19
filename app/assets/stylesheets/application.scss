@@ -7,8 +7,8 @@
 .navbar-brand > img {
     display: inline-block; //圖片和鏈接文字顯示在同一行
     margin-right: 10px; //圖片和鏈接文字拉開一點距離
-    width: 32px; //定製圖片寬度
-    height: 32px; //定製圖片高度
+    width: 30px; //定製圖片寬度
+    height: 30px; //定製圖片高度
 }
 
 .navbar-default {
@@ -19,6 +19,8 @@
 }
 
 .navbar-default .navbar-brand {
+    font-size: 25px;
+    font-family: Arial Black;
     color: #EF6C00;
     padding: 10px 15px;
     line-height: 30px;
