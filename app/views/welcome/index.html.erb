@@ -1,18 +1,15 @@
 <!-- cover -->
-<div class="col-md-12">
-  <div class="row box">
-    <div class="box-inner col-md-6 col-md-offset-3">
-      <h1 class="title">
-        <%= t('logo_title') %>
-      </h1>
-      <p class="slogan">
-        <%= t('slogan') %>
-      </p>
-      <p class="lead">
-        <%= link_to t('btn_apply'), jobs_path, class: 'btn btn-danger' %>
-      </p>
-    </div>
-  </div>
+<div class="jumbotron">
+  <!-- title -->
+  <h1 class="title"><%= t('logo_title') %></h1>
+  <!-- slogan -->
+  <p class="slogan">
+      <%= t('slogan') %>
+  </p>
+  <!-- button -->
+  <p class="lead">
+    <%= link_to t('btn_apply'), jobs_path, class: 'btn btn-lg btn-danger button_highlight' %>
+  </p>
 </div>
 
 <%= render :partial => "features" %>
