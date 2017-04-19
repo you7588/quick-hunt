@@ -30,9 +30,20 @@ en:
   sec_heading_act: ""
   sec_text_act: "Be the next career success story."
 
-
   # buttons
   btn_act: "Act Now"
+
+#--------- testimonial ---------
+  sec_heading_testimonial: "CUSTOMER QUOTES"
+  sec_text_testimonial: "Don't just take it from us, let our customers do the talking!"
+
+  sec_text_testimonial_1: "I never thought I stood a chance when I applied for a full-time job at Google, but suddenly there I was at the first, the second and then the final interview."
+
+  sec_text_testimonial_2: "I never thought I stood a chance when I applied for a full-time job at Google, but suddenly there I was at the first, the second and then the final interview."
+
+  sec_text_testimonial_3: "I never thought I stood a chance when I applied for a full-time job at Google, but suddenly there I was at the first, the second and then the final interview."
+
+  sec_text_testimonial_4: "I never thought I stood a chance when I applied for a full-time job at Google, but suddenly there I was at the first, the second and then the final interview."
 
 #--------- navbar---------
   sign_up: "Sign Up"
