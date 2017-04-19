@@ -8,6 +8,18 @@ en:
   copyright: "Copyright ©2016"
   author: "Design by Anndo"
 
+# content
+  #section heading
+  sec_heading_1: "FIND"
+  sec_heading_2: "HIRE"
+  sec_heading_3: "WORK"
+
+  sec_text_1: "Post a job to tell us about your project. We'll quickly match you with the right freelancers."
+
+  sec_text_2: "Browse profiles, reviews, and proposals then interview top candidates. Hire a favorite and begin your project."
+
+  sec_text_3: "Use the Upwork platform to chat, share files, and collaborate from your desktop or on the go."
+
 #--------- navbar---------
   sign_up: "Sign Up"
   login: "Login"
