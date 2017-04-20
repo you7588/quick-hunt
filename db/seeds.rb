@@ -9,25 +9,80 @@
 create_account = User.create([email: 'admin@gmail.com', password: '111111', password_confirmation: '111111', is_admin: 'true'])
 puts 'Admin account is created successfully!'
 
-job_info = [
-  '招聘RoR工程师',
-  '招聘文案设计',
-  '招聘UI设计师',
-  '招聘Android开发工程师',
-  '招聘产品经理',
-  '招聘前端开发工程师',
-  '招聘市场营销',
-  '招聘php后台研发工程师',
-  '招聘python工程师',
-  '招聘高级JAVA研发工程师',
-  '招聘高级数据挖掘工程师',
-  '招聘高级客服经理'
+create_account = User.create([email: 'anndo@gmail.com', password: '111111', password_confirmation: '111111', is_admin: 'false'])
+puts 'Admin account is created successfully!'
+
+job_company =
+[
+  'Google',
+  'amazon',
+  'Uber',
+  'Apple',
+  'Microsoft',
 ]
-create_jobs = for i in 1..10 do
-                Job.create!([title: job_info[rand(job_info.length)], description: "这是一个公开的工作", wage_upper_bound: rand(40..79) * 1000, wage_lower_bound: rand(20..39) * 1000, is_hidden: 'false'])
-              end
+
+job_category = [
+  'Engineering & Technology',
+  'Sales, Service & Support',
+  'Marketing & Communications',
+  'Business Strategy',
+  'Design',
+]
+
+job_title = [
+  'Account Manager',
+  'New Business Sales',
+  'Analyst',
+  'Sales Engineer',
+  'Test Engineer',
+  'Creative Designer',
+  'Events Planner',
+]
+
+job_description = [
+  'Deliver engaging content and communications with your strategy and publishing experience.',
+  'Plan, produce, and execute impactful events throughout Google.',
+  'Define and evolve Google’s design and creative direction when you produce creative digital assets and branding materials.',
+  'Create innovative and strategic plans and campaigns to engage Googlers across the globe.',
+  'Draw strategic insights and create solutions from complex data.',
+  'Develop external communications strategies to captivate global audiences through compelling written and visual media.'
+]
+
+job_city = [
+  'Tokyo',
+  'Taipei',
+  'New York, NY',
+  'San Francisco, CA',
+  'Beijing',
+  'London',
+]
+
+create_jobs =
+
 for i in 1..10 do
-  Job.create!([title: job_info[rand(job_info.length)], description: "这是一个隐藏的工作", wage_upper_bound: rand(40..79) * 1000, wage_lower_bound: rand(20..39) * 1000, is_hidden: 'true'])
+  Job.create!([
+    company: job_company[rand(job_company.length)],
+    category: job_category[rand(job_category.length)],
+    title: job_title[rand(job_title.length)],
+    description: job_description[rand(job_title.length)],
+    wage_upper_bound: rand(40..79) * 1000,
+    wage_lower_bound: rand(20..39) * 1000,
+    city: job_city[rand(job_city.length)],
+    is_hidden: 'false'
+  ])
+end
+
+for i in 1..10 do
+  Job.create!([
+    company: job_company[rand(job_company.length)],
+    category: job_category[rand(job_category.length)],
+    title: job_title[rand(job_title.length)],
+    description: job_description[rand(job_title.length)],
+    wage_upper_bound: rand(40..79) * 1000,
+    wage_lower_bound: rand(20..39) * 1000,
+    city: job_city[rand(job_city.length)],
+    is_hidden: 'false'
+  ])
 end
 
 puts '10 Public jobs created.'
