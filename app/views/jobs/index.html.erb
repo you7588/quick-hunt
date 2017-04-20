@@ -26,6 +26,9 @@
 <table class="table table-boldered table-striped custab" >
   <thead>
     <tr>
+
+      <td><%= t('th_company') %></td>
+      <td><%= t('th_category') %></td>
       <td><%= t('th_position') %></td>
       <td><%= t('th_salary_min') %></td>
       <td><%= t('th_salary_max') %></td>
@@ -36,6 +39,12 @@
   <tbody>
     <% @jobs.each do |job| %>
       <tr>
+        <td>
+            <%= job.company %>
+        </td>
+        <td>
+            <%= job.category %>
+        </td>
         <td>
             <%= link_to(job.title, job_path(job)) %>
         </td>

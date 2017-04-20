@@ -61,7 +61,9 @@ en:
 
 #--------- jobs index---------
   # table head
-  th_position: "Position"
+  th_company: "Company"
+  th_category: "Category"
+  th_position: "Job Title"
   th_count: "Count"
   th_salary_min: "Salary Min."
   th_salary_max: "Salary Max."
@@ -90,10 +92,13 @@ en:
   f_remeber: "Remeber Me"
 
   # edit/new form
-  f_title: "Title"
-  f_description: "Description"
+  f_company: "Company"
+  f_category: "Job Category"
+  f_title: "Job Title"
+  f_description: "Job Description"
   f_salary_min: "Salary Min."
   f_salary_max: "Salary Max."
+  f_city: "City"
   f_email: "Contact Email"
   f_job_status: "Hidden"
   f_submit: "Submit"
