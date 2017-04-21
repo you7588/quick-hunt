@@ -27,7 +27,7 @@
   position: relative;
 
   .title {
-    width: 40rem;
+    width: 30rem;
     font-size: 2rem;
     text-align: left;
     color: black;
@@ -37,7 +37,7 @@
   }
 
   .job-section p {
-    width: 40rem;
+    width: 38rem;
     text-align: justify;
     padding: 0em 2em 0em 1em;
     margin-bottom: 1em;
@@ -60,5 +60,10 @@
 
   .job-logo{
     margin-top: 0.5em;
+  }
+
+  .button{
+    margin-top: 2.5em;
+    vertical-align: middle;
   }
 }
