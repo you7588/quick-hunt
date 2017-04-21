@@ -28,44 +28,36 @@
   </ul>
 </div>
 
-<!-- table -->
-<table class="table table-boldered table-striped custab" >
-  <thead>
-    <tr>
+<hr>
 
-      <td><%= t('th_company') %></td>
-      <td><%= t('th_category') %></td>
-      <td><%= t('th_position') %></td>
-      <td><%= t('th_salary_range') %></td>
-      <td><%= t('th_published') %></td>
-    </tr>
-
-  </thead>
-  <tbody>
-    <% @jobs.each do |job| %>
-      <tr>
-        <td>
-            <%= job.company %>
-        </td>
-        <td>
-            <%= job.category %>
-        </td>
-        <td>
+<!-- job testing -->
+<% @jobs.each do |job| %>
+  <section id="job-section">
+    <div class="wrapper">
+      <div class="job-section">
+        <div class="col-sm-3">
+          <img class="logo" src='http://i.imgur.com/zVU8xTV.jpg'>
+        </div>
+        <div class="col-sm-4">
+          <div class="title">
             <%= link_to(job.title, job_path(job)) %>
-        </td>
-        <td>
-            <%= job.wage_lower_bound / 1000 %>K
-            -
-            <%= job.wage_upper_bound / 1000 %>K
-        </td>
-        <td>
-            <%= job.created_at %>
-        </td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+          </div>
+          <p>
+            <i class="fa fa-location-arrow fa-fx" aria-hidden="true"></i>
+            <%= job.city %>
 
+            <i class="icon fa fa-usd fa-fx" aria-hidden="true"></i>
+            <%= job.wage_lower_bound / 1000 %> K -
+            <%= job.wage_upper_bound / 1000 %> K
+          </p>
+          <p>
+            <%=  job.description %>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+<% end %>
 
 
 <div class="text-center">
