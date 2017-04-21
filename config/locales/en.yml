@@ -67,6 +67,7 @@ en:
   th_count: "Count"
   th_salary_min: "Salary Min."
   th_salary_max: "Salary Max."
+  th_salary_range: "Salary Range"
   th_manage: "Manage"
   th_published: "Posted Date/Time"
   # buttons

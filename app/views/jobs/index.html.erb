@@ -36,8 +36,7 @@
       <td><%= t('th_company') %></td>
       <td><%= t('th_category') %></td>
       <td><%= t('th_position') %></td>
-      <td><%= t('th_salary_min') %></td>
-      <td><%= t('th_salary_max') %></td>
+      <td><%= t('th_salary_range') %></td>
       <td><%= t('th_published') %></td>
     </tr>
 
@@ -55,10 +54,9 @@
             <%= link_to(job.title, job_path(job)) %>
         </td>
         <td>
-            <%= job.wage_lower_bound %>
-        </td>
-        <td>
-            <%= job.wage_upper_bound %>
+            <%= job.wage_lower_bound / 1000 %>K
+            -
+            <%= job.wage_upper_bound / 1000 %>K
         </td>
         <td>
             <%= job.created_at %>
