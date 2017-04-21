@@ -11,13 +11,19 @@
 
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
     <li>
+      <%= link_to( t('th_company'), jobs_path(:order => "by_company") ) %>
+    </li>
+    <li>
+      <%= link_to( t('th_category'), jobs_path(:order => "by_category") ) %>
+    </li>
+    <li>
       <%= link_to( t('th_salary_min'), jobs_path(:order => "by_lower_bound")) %>
     </li>
     <li>
         <%= link_to( t('th_salary_max'), jobs_path(:order => "by_upper_bound")) %>
     </li>
     <li>
-      <%= link_to( t('btn_sort_latest'), jobs_path ) %>
+      <%= link_to( t('th_published'), jobs_path ) %>
     </li>
   </ul>
 </div>

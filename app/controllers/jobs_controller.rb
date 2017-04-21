@@ -3,6 +3,10 @@ class JobsController < ApplicationController
 
   def index
     @jobs = case params[:order]
+            when 'by_company'
+              Job.published.company.paginate(:page => params[:page], :per_page => 15)
+            when 'by_category'
+              Job.published.category.paginate(:page => params[:page], :per_page => 15)
             when 'by_lower_bound'
               Job.published.order('wage_lower_bound DESC').paginate(:page => params[:page], :per_page => 15)
             when 'by_upper_bound'
