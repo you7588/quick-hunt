@@ -2,6 +2,21 @@ class JobsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy]
 
   def index
+
+    if params[:category].present?
+        @category = params[:category]
+        if @category == t('th_all')
+          @jobs = Job.published.recent.paginate(:page => params[:page], :per_page => 10)
+        else
+          @jobs = Job.where(:is_hidden => false, :category => @category).recent.paginate(:page => params[:page], :per_page => 10)
+        end
+    else
+      @jobs = Job.published.recent.paginate(:page => params[:page], :per_page => 15)
+  end
+
+
+  end
+=begin
     @jobs = case params[:order]
             when 'by_company'
               Job.published.company.paginate(:page => params[:page], :per_page => 15)
@@ -14,7 +29,9 @@ class JobsController < ApplicationController
             else
               Job.published.recent.paginate(:page => params[:page], :per_page => 15)
             end
-  end
+=end
+
+
 
   def show
     @job = Job.find(params[:id])

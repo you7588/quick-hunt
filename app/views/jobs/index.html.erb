@@ -1,4 +1,5 @@
 <!-- dropdown menu for sorting -->
+<section id="fields">
 	<div class="row">
 		<div class="col-md-12">
 			<div class="row">
@@ -50,7 +51,10 @@
                 <div class="title">
                   <%= link_to(job.title, job_path(job)) %>
                 </div>
-                <p>
+								<p>
+									<%= job.category %>
+								</p>
+								<p>
                   <i class="fa fa-location-arrow fa-fx" aria-hidden="true"></i>
                   <%= job.city %>
 
