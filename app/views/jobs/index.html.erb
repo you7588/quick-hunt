@@ -1,69 +1,79 @@
-<div class="pull-right">
-  <%= link_to(t('btn_add'), new_job_path, :class => "btn btn-default" ) %>
-</div>
-
 <!-- dropdown menu for sorting -->
-<div class="dropdown clearfix pull-right">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Sort
-    <span class="caret"></span>
-  </button>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-8">
+				</div>
+				<div class="col-md-4">
+          <div class="dropdown clearfix pull-right">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Sort
+              <span class="caret"></span>
+            </button>
 
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
-    <li>
-      <%= link_to( t('th_company'), jobs_path(:order => "by_company") ) %>
-    </li>
-    <li>
-      <%= link_to( t('th_category'), jobs_path(:order => "by_category") ) %>
-    </li>
-    <li>
-      <%= link_to( t('th_salary_min'), jobs_path(:order => "by_lower_bound")) %>
-    </li>
-    <li>
-        <%= link_to( t('th_salary_max'), jobs_path(:order => "by_upper_bound")) %>
-    </li>
-    <li>
-      <%= link_to( t('th_published'), jobs_path ) %>
-    </li>
-  </ul>
-</div>
-
-<hr>
-
-<!-- job testing -->
-<% @jobs.each do |job| %>
-  <section id="job-section">
-    <div class="wrapper">
-      <div class="job-section">
-        <div class="col-sm-3">
-          <img class="logo" src='http://i.imgur.com/zVU8xTV.jpg'>
-        </div>
-        <div class="col-sm-5">
-          <div class="title">
-            <%= link_to(job.title, job_path(job)) %>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
+              <li>
+                <%= link_to( t('th_company'), jobs_path(:order => "by_company") ) %>
+              </li>
+              <li>
+                <%= link_to( t('th_category'), jobs_path(:order => "by_category") ) %>
+              </li>
+              <li>
+                <%= link_to( t('th_salary_min'), jobs_path(:order => "by_lower_bound")) %>
+              </li>
+              <li>
+                  <%= link_to( t('th_salary_max'), jobs_path(:order => "by_upper_bound")) %>
+              </li>
+              <li>
+                <%= link_to( t('th_published'), jobs_path ) %>
+              </li>
+            </ul>
           </div>
-          <p>
-            <i class="fa fa-location-arrow fa-fx" aria-hidden="true"></i>
-            <%= job.city %>
+				</div>
+			</div>
+		</div>
+	</div>
 
-            <i class="icon fa fa-usd fa-fx" aria-hidden="true"></i>
-            <%= job.wage_lower_bound / 1000 %> K -
-            <%= job.wage_upper_bound / 1000 %> K
-          </p>
-          <p>
-            <%=  job.description %>
-          </p>
-        </div>
-        <div class="col-sm-2 pull-right">
-          <div class="button">
-            <%= link_to t('btn_apply'), job_path(job), class: 'btn btn-middle btn-info' %>
-          <div>
-        </div>
-      </div>
+
+<!-- job blocks section -->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+      <% @jobs.each do |job| %>
+        <section id="job-section">
+          <div class="wrapper">
+            <div class="job-section">
+              <div class="col-sm-3">
+                <img class="logo" src='http://i.imgur.com/zVU8xTV.jpg'>
+              </div>
+              <div class="col-sm-5">
+                <div class="title">
+                  <%= link_to(job.title, job_path(job)) %>
+                </div>
+                <p>
+                  <i class="fa fa-location-arrow fa-fx" aria-hidden="true"></i>
+                  <%= job.city %>
+
+                  <i class="icon fa fa-usd fa-fx" aria-hidden="true"></i>
+                  <%= job.wage_lower_bound / 1000 %> K -
+                  <%= job.wage_upper_bound / 1000 %> K
+                </p>
+                <p>
+                  <%=  job.description %>
+                </p>
+              </div>
+              <div class="col-sm-2 pull-right">
+                <div class="button">
+                  <%= link_to t('btn_apply'), job_path(job), class: 'btn btn-middle btn-info' %>
+                <div>
+              </div>
+            </div>
+          </div>
+        </section>
+      <% end %>
     </div>
-  </section>
-<% end %>
-
+  </div>
+</dvi>
 
 <div class="text-center">
   <%= will_paginate @jobs %>
