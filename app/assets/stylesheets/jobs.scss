@@ -27,7 +27,7 @@
   position: relative;
 
   .title {
-    width: 30rem;
+    width: 40rem;
     font-size: 2rem;
     text-align: left;
     color: black;
@@ -37,9 +37,9 @@
   }
 
   .job-section p {
-    width: 38rem;
+    width: 40rem;
     text-align: justify;
-    padding: 0em 2em 0em 1em;
+    padding: 0em 0em 0em 1.4em;
     margin-bottom: 1em;
   }
 
@@ -47,10 +47,9 @@
     background-color: #f8f8f8;
     display: inline-block;
     margin: 0 1% 0;
-    padding: 2rem 1.5%;
-    text-align: center;
+    padding: 2rem;
     -moz-box-shadow: 0px 0px 57px 0px rgba(4,6,9,0.25);
-    box-shadow: 0px 0px 2px 0px rgba(4,6,9,0.25);
+    box-shadow: 0px 0px 3px 0px rgba(4,6,9,0.25);
     border-radius: .35rem;
   }
 
@@ -59,11 +58,12 @@
   }
 
   .job-logo{
-    margin-top: 0.5em;
+    margin: 10px;
+    border-radius: 80%;
   }
 
   .button{
-    margin-top: 2.5em;
+    margin-top: 45px;
     vertical-align: middle;
   }
 }

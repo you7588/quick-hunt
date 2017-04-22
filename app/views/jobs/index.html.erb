@@ -43,10 +43,10 @@
         <section id="job-section">
           <div class="wrapper">
             <div class="job-section">
-              <div class="col-sm-3">
-                <img class="logo" src='http://i.imgur.com/zVU8xTV.jpg'>
+              <div class="col-sm-2">
+                <img class="job-logo" src='http://i.imgur.com/zVU8xTV.jpg'>
               </div>
-              <div class="col-sm-5">
+              <div class="col-sm-8">
                 <div class="title">
                   <%= link_to(job.title, job_path(job)) %>
                 </div>
@@ -64,7 +64,7 @@
               </div>
               <div class="col-sm-2 pull-right">
                 <div class="button">
-                  <%= link_to t('btn_apply'), job_path(job), class: 'btn btn-middle btn-info' %>
+                  <%= link_to t('btn_job_apply'), job_path(job), class: 'btn btn-middle btn-info' %>
                 <div>
               </div>
             </div>
