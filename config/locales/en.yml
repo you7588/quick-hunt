@@ -112,7 +112,7 @@ en:
 
   # show
   btn_apply: "Apply Now"
-
+  btn_resume: "Send Resume"
   # resume
   btn_download: "Download Resume"
   attachment_status: "No attachment"

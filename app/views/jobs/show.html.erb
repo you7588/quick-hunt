@@ -14,7 +14,7 @@
       <p class="details">
         <i class="fa fa-location-arrow fa-fx" aria-hidden="true"></i>
         <%= @job.city %>
-        
+
         <i class="icon fa fa-usd fa-fx" aria-hidden="true"></i>
         <%= @job.wage_lower_bound / 1000 %> K -
         <%= @job.wage_upper_bound / 1000 %> K
@@ -27,7 +27,7 @@
 
       <!-- submit resume -->
       <div class='button'>
-        <%= link_to(t('btn_apply'), new_job_resume_path(@job), class: 'btn btn-lg btn-danger button_highlight') %>
+        <%= link_to(t('btn_resume'), new_job_resume_path(@job), class: 'btn btn-lg btn-danger button_highlight') %>
       </div>
 
   </div>
