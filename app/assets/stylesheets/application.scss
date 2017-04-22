@@ -3,7 +3,6 @@
 @import "font-awesome";
 @import "jobs.scss";
 
-
 //---------Navbar---------
 
 .navbar-brand > img {
@@ -239,14 +238,13 @@ hr {
 }
 
 //---------Footer---------
-
-hr.footer {
-    margin-top: 2em;
-    margin-bottom: 3em;
-}
-
 footer {
     color: white;
+}
+
+footer .space {
+    margin-top: 5em;
+
 }
 
 footer .footer-below {
