@@ -1,5 +1,28 @@
 en:
 
+#--------- devise ---------
+  dv_login: "Login"
+  dv_signup: "Sign Up"
+  dv_email: "Email"
+  dv_pwd: "Password"
+  dv_remeber_me: "Remember Me"
+  dv_forgot_pwd: "Forgot Password?"
+  dv_check_email: "your@example.com"
+  dv_real_name: "First and last name"
+  dv_find_pwd: "Get Your Password"
+  dv_account_signin: "Already a Quick Hunt user? Login now."
+  dv_no_account_signup: "Join Quick Hunt now!"
+  dv_user: "Talent"
+  dv_admin: "Employer"
+  dv_set_pwd: "Create password"
+  dv_comfirm_pwd: "Confirm password"
+
+  #error message
+  dv_warn_email: "Please enter your email."
+  dv_warn_real_name: "Please enter your name."
+  dv_warn_pwd: "Your password and confirmation password do not match."
+  dv_warn_pwd_characters: "Enter a password between 6- 16 characters."
+
 #--------- landing page---------
   logo_title: "Quick Hunt"
   slogan: "Quick Hunt's mission is to remove all your worries, fear, stress and pains of job search. Since launch, we have helped hundreds and thousands of people find jobs. Our goal is simple: provide most relevant and up-to-date information and help as many people as possible."
