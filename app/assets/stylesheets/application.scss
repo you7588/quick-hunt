@@ -14,13 +14,23 @@
  *= require_self
  */
 
-
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
 @import "jobs.scss";
 
 //---------Navbar---------
+
+.form-group {
+    margin: 10px 2px 10px 2px;
+}
+
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    width: 300px; //加上width
+}
 
 .navbar-brand > img {
     display: inline-block; //圖片和鏈接文字顯示在同一行
