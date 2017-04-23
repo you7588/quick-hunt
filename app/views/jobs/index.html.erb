@@ -66,9 +66,10 @@
                   <%=  job.description %>
                 </p>
               </div>
+							<!-- button -->
               <div class="col-sm-2 pull-right">
-                <div class="button">
-                  <%= link_to t('btn_job_apply'), job_path(job), class: 'btn btn-middle btn-info' %>
+								<div class="button">
+									<%= link_to(t('btn_job_apply'), new_job_resume_path(job), class: "btn btn-info btn-middle", method: :get) %>
                 <div>
               </div>
             </div>
