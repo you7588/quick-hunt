@@ -1,9 +1,38 @@
-<h3> Apply for <%= @job.title %> </h3>
+<div class="container-fluid">
+  <div class="col-md-12">
+    <section id="job-info">
 
-<hr>
+      <!-- logo -->
+      <img class="job-logo" src='http://i.imgur.com/zVU8xTV.jpg'>
 
-<%= simple_form_for [@job, @resume] do |f| %>
-  <%= f.input :content, :label => t('f_content') %>
-  <%= f.input :attachment, :label => t('f_attachment') %>
-  <%= f.submit t('f_send') %>
-<% end %>
+      <!-- title -->
+      <div class="job-title">
+        <%= @job.title %>
+      </div>
+
+      <!-- location and salary -->
+      <p class="details">
+        <i class="fa fa-location-arrow fa-fx" aria-hidden="true"></i>
+        <%= @job.city %>
+
+        <i class="icon fa fa-usd fa-fx" aria-hidden="true"></i>
+        <%= @job.wage_lower_bound / 1000 %> K -
+        <%= @job.wage_upper_bound / 1000 %> K
+      </p>
+
+      <!-- description -->
+      <p>
+        <%= simple_format(@job.description) %>
+      </p>
+
+      <hr>
+
+      <div>
+        <%= simple_form_for [@job, @resume] do |f| %>
+          <%= f.input :content, :label => t('f_content') %>
+          <%= f.input :attachment, :label => t('f_attachment') %>
+          <%= f.submit t('f_send') %>
+        <% end %>
+      </div>
+  </div>
+</div>
