@@ -1,6 +1,15 @@
 Rails.application.routes.draw do
   devise_for :users
 
+  # search
+  resources :jobs do
+    collection do
+      get :search
+    end
+
+    resources :resumes
+  end
+
   # fields
   get "fields/index"
 
