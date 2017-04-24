@@ -77,6 +77,7 @@ en:
   sign_up: "Sign Up"
   login: "Login"
   greeting: "Hi, "
+  language_switch: "Language Switch"
 
   # navbar dropdown menu
   admin_panel: "Admin Panel"

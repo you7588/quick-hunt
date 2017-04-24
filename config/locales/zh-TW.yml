@@ -71,6 +71,7 @@ zh-TW:
   sign_up: "註冊"
   login: "登入"
   greeting: "嗨，"
+  language_switch: "切換語系"
 
   # navbar dropdown menu
   admin_panel: "後台管理"
