@@ -1,4 +1,11 @@
 en:
+  devise:
+    failure:
+      unauthenticated: "You need to sign in or sign up before continuing."
+    sessions:
+      signed_in: "Signed in successfully."
+      signed_out: "Signed out successfully."
+
 
 #--------- devise ---------
   dv_login: "Login"
@@ -83,6 +90,13 @@ en:
   admin_panel: "Admin Panel"
   log_out: "Log Out"
 
+#--------- searhc ---------
+  str_search: "We have found "
+  str_result: " jobs for you."
+
+  view_all: "View All"
+  resturn: "Return"
+  
 #--------- fields of work ---------
   fields_of_work: "Fiels of Work"
 
