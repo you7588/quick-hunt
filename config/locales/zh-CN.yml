@@ -1,31 +1,39 @@
-zh-TW:
+zh-CN:
+  devise:
+    failure:
+      unauthenticated: "您必须是 Quick Hunt 用户才能进行操作。"
+    sessions:
+      signed_in: "登入成功，欢迎回来！"
+      signed_out: "登出成功。"
 
 #--------- devise ---------
   dv_login: "登入"
-  dv_signup: "註冊"
-  dv_email: "電子信箱"
-  dv_pwd: "密碼"
-  dv_remeber_me: "記住我"
-  dv_forgot_pwd: "忘記密碼？"
+  dv_signup: "注册"
+  dv_email: "电子信箱"
+  dv_pwd: "密码"
+  dv_remeber_me: "记住我"
+  dv_forgot_pwd: "忘记密码？"
   dv_check_email: "your@example.com"
   dv_real_name: "姓名"
-  dv_find_pwd: "取得密碼"
-  dv_account_signin: "已經是 Quick Hunt 用戶了嗎？按此登入。"
-  dv_no_account_signup: "現在就加入 Quick Hunt 極速應聘！"
+  dv_find_pwd: "取得密码"
+  dv_account_signin: "已经是 Quick Hunt 用户了吗？按此登入。"
+  dv_no_account_signup: "现在就加入 Quick Hunt 极速应聘！"
   dv_user: "人才"
-  dv_admin: "企業"
-  dv_set_pwd: "設定密碼"
-  dv_comfirm_pwd: "確認密碼"
+  dv_admin: "企业"
+  dv_set_pwd: "设定密码"
+  dv_comfirm_pwd: "确认密码"
 
   #error message
-  dv_warn_email: "請輸入您的電子信箱。"
-  dv_warn_real_name: "請輸入您的大名。"
-  dv_warn_pwd: "密碼不相符，請再次確認。"
-  dv_warn_pwd_characters: "請輸入 6 到 16 字元的密碼。"
+  dv_warn_email: "请输入您的电子信箱。"
+  dv_warn_real_name: "请输入您的大名。"
+  dv_warn_pwd: "密码不相符，请再次确认。"
+  dv_warn_pwd_characters: "请输入 6 到 16 字元的密码。"
+
+
 
 #--------- landing page---------
-  logo_title: "Quick Hunt -- 極速應聘"
-  slogan: ""
+  logo_title: "Quick Hunt"
+  slogan: "一键投递、快速应聘，Quick Hunt 致力于提供最方便简洁的求职平台。"
 
 # footer
   copyright: "Copyright ©2016"
@@ -34,52 +42,60 @@ zh-TW:
 # content
 
   # features
-  sec_heading_features: "為什麼 QUICK HUNT 是您的第一選擇？"
-  sec_text_features: "我們保證：最簡易快速的應聘流程、一流的工作機會，及一流的服務品質。"
+  sec_heading_features: "为什么 QUICK HUNT 是您的第一选择？"
+  sec_text_features: "我们保证：最简易快速的应聘流程、一流的工作机会，及一流的服务品质。"
 
   # section heading
   sec_heading_1: "急速送交"
-  sec_heading_2: "嚴選企業"
-  sec_heading_3: "專業諮詢"
+  sec_heading_2: "严选企业"
+  sec_heading_3: "专业咨询"
 
-  sec_text_1: "消除您的填單恐懼，一鍵上傳、應聘，找工作再也不是費時費心的流程惡夢。"
-  sec_text_2: "Quick Hunt 提供近百家企業及新創公司的工作機會。放眼望去，盡是好缺；讓您挑選工作高枕無憂。"
-  sec_text_3: "履歷遲遲不敢下筆？聯繫我們，讓 Quick Hunt 為您提供快速且到位的優質履歷批改服務。履歷一次通關不是夢。"
+  sec_text_1: "消除您的填单恐惧，一键上传、应聘，找工作再也不是费时费心的流程恶梦。"
+  sec_text_2: "Quick Hunt 提供近百家企业及新创公司的工作机会。放眼望去，尽是好缺；让您挑选工作高枕无忧。"
+  sec_text_3: "履历迟迟不敢下笔？联系我们，让 Quick Hunt 为您提供快速且到位的优质履历批改服务。履历一次通关不是梦。"
 
   # companys
-  sec_heading_cooperation: "我們的合作企業"
-  sec_text_cooperation: "為了提供最優質的工作機會，我們與全球頂尖企業密切合作："
+  sec_heading_cooperation: "我们的合作企业"
+  sec_text_cooperation: "为了提供最优质的工作机会，我们与全球顶尖企业密切合作："
 
-  sec_heading_hired: "求職平台首選"
-  sec_text_hired: "過去近萬名用戶透過 Quick Hunt 找到以下企業的高薪職缺："
+  sec_heading_hired: "求职平台首选"
+  sec_text_hired: "过去近万名用户透过 Quick Hunt 找到以下企业的高薪职缺："
 
   sec_heading_act: ""
   sec_text_act: ""
 
   # buttons
-  btn_act: "現在就行動！"
+  btn_act: "现在就行动！"
 
 #--------- testimonial ---------
-  sec_heading_testimonial: "用戶反饋"
-  sec_text_testimonial: "聽聽 Quick Hunt 用戶怎麼說？"
+  sec_heading_testimonial: "用户反馈"
+  sec_text_testimonial: "听听 Quick Hunt 用户怎么说？"
 
-  sec_text_testimonial_1: "過去一直對轉職和求職的漫長過程感到厭煩，但朋友大力推薦的 Quick Hunt 徹底顛覆了我對找聘工作的印象。"
-  sec_text_testimonial_2: "在使用了 Quick Hunt 的履歷諮詢服務後，我的履歷頓時亮眼了許多，並在短短一周內受到近十家大企業的面試邀請。"
-  sec_text_testimonial_3: "Quick Hunt 幫我圓了進 Facebook 工作這個夢。如果你也渴望更好的工作機會，你絕不能錯過 Quick Hunt 豐富的求職資源。"
+  sec_text_testimonial_1: "过去一直对转职和求职的漫长过程感到厌烦，但朋友大力推荐的 Quick Hunt 彻底颠覆了我对找聘工作的印象。"
+  sec_text_testimonial_2: "在使用了 Quick Hunt 的履历咨询服务后，我的履历顿时亮眼了许多，并在短短一周内受到近十家大企业的面试邀请。"
+  sec_text_testimonial_3: "Quick Hunt 帮我圆了进 Facebook 工作这个梦。如果你也渴望更好的工作机会，你绝不能错过 Quick Hunt 丰富的求职资源。"
   sec_text_testimonial_4:
 #--------- navbar---------
-  sign_up: "註冊"
+  sign_up: "注册"
   login: "登入"
   greeting: "嗨，"
+  language_switch: "切换语系"
 
   # navbar dropdown menu
-  admin_panel: "後台管理"
+  admin_panel: "后台管理"
   log_out: "登出"
 
-#--------- fields of work ---------
-  fields_of_work: "職缺分類"
+#--------- searhc ---------
+  str_search: "为您找到 "
+  str_result: " 个职缺。"
 
-  th_all: "所有分類"
+  view_all: "工作一览"
+  return: "返回"
+
+#--------- fields of work ---------
+  fields_of_work: "职缺分类"
+
+  th_all: "所有分类"
   th_category_1: "Engineering & Technology"
   th_category_2: "Sales, Service & Support"
   th_category_3: "Marketing & Communications"
@@ -100,62 +116,62 @@ zh-TW:
   about_category_8: "Find, grow, and support the people who make Google great."
   about_category_9: "Reimagine what it means to be at work."
 
-  btn_see_jobs: "瀏覽職缺"
+  btn_see_jobs: "浏览职缺"
 
 #--------- jobs index ---------
   # table head
   th_company: "公司"
-  th_category: "分類"
-  th_position: "職位名稱"
-  th_count: "履歷數量"
-  th_salary_min: "薪資下限"
-  th_salary_max: "新資上限"
-  th_salary_range: "新資範圍"
+  th_category: "分类"
+  th_position: "职位名称"
+  th_count: "履历数量"
+  th_salary_min: "薪资下限"
+  th_salary_max: "新资上限"
+  th_salary_range: "新资范围"
   th_manage: "管理"
-  th_published: "發佈日期"
+  th_published: "发布日期"
   # buttons
-  btn_add: "新增職缺"
+  btn_add: "新增职缺"
   btn_sort: "排序"
-  btn_hide: "隱藏"
-  btn_publish: "發佈"
-  btn_edit: "編輯"
-  btn_delete: "刪除"
+  btn_hide: "隐藏"
+  btn_publish: "发布"
+  btn_edit: "编辑"
+  btn_delete: "删除"
 
   # sort menu
   btn_sort_latest: "最新"
-  btn_job_apply: "一鍵應聘"
+  btn_job_apply: "一键应聘"
 
 #--------- form---------
   # form headings
   hd_new: "新增工作"
-  hd_edit: "編輯工作"
+  hd_edit: "编辑工作"
 
   # login & signup form
-  f_account: "電子信箱"
-  f_password: "密碼"
-  f_confirm_password: "確認密碼"
-  f_remeber: "記住我"
+  f_account: "电子信箱"
+  f_password: "密码"
+  f_confirm_password: "确认密码"
+  f_remeber: "记住我"
 
   # edit/new form
   f_company: "公司"
-  f_category: "分類"
-  f_title: "職位名稱"
-  f_description: "職位描述"
-  f_salary_min: "薪資下限"
-  f_salary_max: "薪資上限"
+  f_category: "分类"
+  f_title: "职位名称"
+  f_description: "职位描述"
+  f_salary_min: "薪资下限"
+  f_salary_max: "薪资上限"
   f_city: "城市"
-  f_email: "聯絡信箱"
-  f_job_status: "隱藏"
+  f_email: "联络信箱"
+  f_job_status: "隐藏"
   f_submit: "送交"
   f_update: "更新"
   # resume form
-  f_content: "求職訊息"
-  f_attachment: "上傳履歷"
+  f_content: "求职讯息"
+  f_attachment: "上传履历"
   f_send: "送交"
 
   # show
-  btn_apply: "體驗極速應聘"
-  btn_resume: "遞交履歷"
+  btn_apply: "体验极速应聘"
+  btn_resume: "递交履历"
   # resume
-  btn_download: "下載履歷"
-  attachment_status: "附件：無"
+  btn_download: "下载履历"
+  attachment_status: "附件：无"
