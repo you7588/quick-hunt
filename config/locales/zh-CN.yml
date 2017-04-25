@@ -1,10 +1,4 @@
 zh-CN:
-  devise:
-    failure:
-      unauthenticated: "您必须是 Quick Hunt 用户才能进行操作。"
-    sessions:
-      signed_in: "登入成功，欢迎回来！"
-      signed_out: "登出成功。"
 
 #--------- devise ---------
   dv_login: "登入"
