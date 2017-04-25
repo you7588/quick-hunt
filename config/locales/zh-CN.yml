@@ -1,4 +1,10 @@
 zh-CN:
+  devise:
+    failure:
+      unauthenticated: "您必须是 Quick Hunt 用户才能进行操作。"
+    sessions:
+      signed_in: "登入成功，欢迎回来！"
+      signed_out: "登出成功。"
 
 #--------- devise ---------
   dv_login: "登入"
@@ -26,6 +32,7 @@ zh-CN:
 
 
 #--------- landing page---------
+  oppotunities: "工作机会"
   logo_title: "Quick Hunt"
   slogan: "一键投递、快速应聘，Quick Hunt 致力于提供最方便简洁的求职平台。"
 

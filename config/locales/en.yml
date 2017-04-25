@@ -31,6 +31,8 @@ en:
   dv_warn_pwd_characters: "Enter a password between 6- 16 characters."
 
 #--------- landing page---------
+  oppotunities: "Oppotunities"
+
   logo_title: "Quick Hunt"
   slogan: "Quick Hunt's mission is to remove all your worries, fear, stress and pains of job search. Find your job with simply one click."
 
@@ -96,7 +98,7 @@ en:
 
   view_all: "View All"
   resturn: "Return"
-  
+
 #--------- fields of work ---------
   fields_of_work: "Fiels of Work"
 
