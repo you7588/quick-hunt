@@ -5030,7 +5030,7 @@ a.thumbnail.active {
 }
 .alert {
   padding: 15px;
-  margin-bottom: 21px;
+  margin: -50px 0px 21px 0px; //將 flash 訊息往上頂
   border: 1px solid transparent;
   border-radius: 4px;
 }
