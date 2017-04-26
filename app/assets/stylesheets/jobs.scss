@@ -17,96 +17,111 @@
     transition: 0.5s;
 }
 
+//---------job search---------
 
+//no search result
+.search-error{
+    text-align: center;
+    min-height: 310px;
+    margin-top: 250px;
+    margin-bottom: 30px;
+}
+
+.search-results{
+    text-align: center;
+    min-height: 525px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
 //---------job index---------
 #job-section {
 
-  padding: 0.5rem 0 0.5rem 0;
-  text-align: center;
-  position: relative;
+    padding: 0.5rem 0 0.5rem 0;
+    text-align: center;
+    position: relative;
 
-  .title {
-    width: 40rem;
-    font-size: 2rem;
-    text-align: left;
-    color: black;
-    margin: 0;
-    padding: 0em 2em 0em 1em;
-    padding-bottom: 0.5rem;
+    .title {
+      width: 40rem;
+      font-size: 2rem;
+      text-align: left;
+      color: black;
+      margin: 0;
+      padding: 0em 2em 0em 1em;
+      padding-bottom: 0.5rem;
+    }
+
+    .job-section p {
+      width: 40rem;
+      text-align: justify;
+      padding: 0em 0em 0em 1.4em;
+      margin-bottom: 1em;
+    }
+
+    .job-section {
+      background-color: #f8f8f8;
+      display: inline-block;
+      margin: 0 1% 0;
+      padding: 2rem;
+      -moz-box-shadow: 0px 0px 57px 0px rgba(4,6,9,0.25);
+      box-shadow: 0px 0px 3px 0px rgba(4,6,9,0.25);
+      border-radius: .35rem;
+    }
+
+    .icon{
+      padding-left: 1em;
+    }
+
+    .job-logo{
+      margin: 10px;
+      border-radius: 80%;
+    }
+
+    .button{
+      margin-top: 45px;
+      vertical-align: middle;
+    }
   }
 
-  .job-section p {
-    width: 40rem;
-    text-align: justify;
-    padding: 0em 0em 0em 1.4em;
-    margin-bottom: 1em;
-  }
+  //---------job info---------
+  #job-info {
 
-  .job-section {
-    background-color: #f8f8f8;
-    display: inline-block;
-    margin: 0 1% 0;
-    padding: 2rem;
-    -moz-box-shadow: 0px 0px 57px 0px rgba(4,6,9,0.25);
-    box-shadow: 0px 0px 3px 0px rgba(4,6,9,0.25);
-    border-radius: .35rem;
-  }
+    padding: 5em;
+    text-align: center;
+    position: relative;
 
-  .icon{
-    padding-left: 1em;
-  }
+    .job-title {
+      font-family: Arial Black;
+      font-size: 3rem;
+      padding: 1em 0em 0.5em 0em;
+    }
 
-  .job-logo{
-    margin: 10px;
-    border-radius: 80%;
-  }
+    .details {
+      font-size: 1.5rem;
+      padding: 0.5em 0em 0.5em 0em;
+    }
 
-  .button{
-    margin-top: 45px;
-    vertical-align: middle;
-  }
-}
+    .job-info {
+      background-color: #f8f8f8;
+      display: inline-block;
+      margin: 0 1% 0;
+      padding: 2rem;
+      -moz-box-shadow: 0px 0px 57px 0px rgba(4,6,9,0.25);
+      box-shadow: 0px 0px 3px 0px rgba(4,6,9,0.25);
+      border-radius: .35rem;
+    }
 
-//---------job info---------
-#job-info {
+    .icon{
+      padding-left: 1em;
+    }
 
-  padding: 5em;
-  text-align: center;
-  position: relative;
+    .job-logo{
+      margin: 10px;
+      border-radius: 80%;
+    }
 
-  .job-title {
-    font-family: Arial Black;
-    font-size: 3rem;
-    padding: 1em 0em 0.5em 0em;
-  }
-
-  .details {
-    font-size: 1.5rem;
-    padding: 0.5em 0em 0.5em 0em;
-  }
-
-  .job-info {
-    background-color: #f8f8f8;
-    display: inline-block;
-    margin: 0 1% 0;
-    padding: 2rem;
-    -moz-box-shadow: 0px 0px 57px 0px rgba(4,6,9,0.25);
-    box-shadow: 0px 0px 3px 0px rgba(4,6,9,0.25);
-    border-radius: .35rem;
-  }
-
-  .icon{
-    padding-left: 1em;
-  }
-
-  .job-logo{
-    margin: 10px;
-    border-radius: 80%;
-  }
-
-  .button{
-    margin: 50px 0px 50px 0px;
-    vertical-align: middle;
-  }
+    .button{
+      margin: 50px 0px 50px 0px;
+      vertical-align: middle;
+    }
 }

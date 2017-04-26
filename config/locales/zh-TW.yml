@@ -90,6 +90,7 @@ zh-TW:
   str_search: "為您找到 "
   str_result: " 個職缺。"
 
+  no_result: "沒有符合搜尋結果的資料。"
   view_all: "工作一覽"
   return: "返回"
 

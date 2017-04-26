@@ -1,26 +1,28 @@
-<div id="search-page" class="container-fluid jobs-show-page">
-  <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-    <br>
-    <div class="pull-right">
-      <%= link_to(content_tag(:i, t('th_all'), class: "fa fa-reply-all"), jobs_path) %> |
-      <%= link_to(content_tag(:i, t('return'), class: "fa fa-arrow-left"), url_for(:back)) %>
-    </div>
-
+<div class="col-md-10 col-md-offset-1">
+    <!-- no result -->
     <% if @jobs.blank?%>
-      <br>
-      <div>
-        <%= t('no_result') %>
+      <div class="search-error">
+        <h3><%= t('no_result') %></h3>
+        <br>
+        <p><%= link_to(t('view_all'), jobs_path, class: "btn btn-lg btn-success") %></p>
       </div>
+    <!-- search results -->
     <% else %>
-      <h3>
-        <%= t('str_search') %>
-          <%= @jobs.count %>
-        <%= t('str_result') %>
-      </h3>
-      <div class="divider"></div>
-      <%= render :partial => "jobs_item", :collection => @jobs, :as => :job %>
-      <div class="text-center">
-        <%= will_paginate @jobs, renderer: BootstrapPagination::Rails %>
+      <div class="search-results">
+        <div class="text-center">
+          <!-- string -->
+          <h3><%= t('str_search') %><%= @jobs.count %><%= t('str_result') %></h3>
+        </div>
+
+        <!-- render ist of results -->
+        <%= render :partial => "jobs_item", :collection => @jobs, :as => :job %>
+
+        <!-- pagination -->
+        <div class="col-md-10 col-md-offset-1 job-bottom">
+          <div class="text-center">
+            <%= will_paginate @jobs, renderer: BootstrapPagination::Rails %>
+          </div>
+        </div>
       </div>
     <% end %>
   </div>

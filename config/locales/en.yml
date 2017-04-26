@@ -92,11 +92,12 @@ en:
   admin_panel: "Admin Panel"
   log_out: "Log Out"
 
-#--------- searhc ---------
+#--------- search ---------
   str_search: "We have found "
-  str_result: " jobs for you."
+  str_result: " jobs for you!"
 
-  view_all: "View All"
+  no_result: "There are no results that match your search."
+  view_all: "Best Jobs Here"
   resturn: "Return"
 
 #--------- fields of work ---------

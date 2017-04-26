@@ -86,10 +86,11 @@ zh-CN:
   admin_panel: "后台管理"
   log_out: "登出"
 
-#--------- searhc ---------
+#--------- search ---------
   str_search: "为您找到 "
   str_result: " 个职缺。"
 
+  no_result: "没有符合搜索条件的资料。"
   view_all: "工作一览"
   return: "返回"
 
