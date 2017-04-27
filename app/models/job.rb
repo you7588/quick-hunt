@@ -6,7 +6,7 @@ class Job < ApplicationRecord
 
   has_many :resumes
   has_many :star_relationships
-  has_many :applicants, through: :star_relationships, source: :user
+  has_many :followers, through: :star_relationships, source: :user
 
   def publish!
     self.is_hidden = false

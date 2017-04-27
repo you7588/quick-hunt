@@ -12,7 +12,7 @@ class User < ApplicationRecord
     is_admin
   end
 
-  def is_applicant_of?(job)
+  def is_follower_of?(job)
     starred_jobs.include?(job)
   end
 
