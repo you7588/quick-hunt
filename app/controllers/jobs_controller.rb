@@ -8,13 +8,13 @@ class JobsController < ApplicationController
     if params[:category].present?
         @category = params[:category]
         if @category == t('th_all')
-          @jobs = Job.published.recent.paginate(:page => params[:page], :per_page => 10)
+          @jobs = Job.published.recent.paginate(:page => params[:page], :per_page => 5)
         else
-          @jobs = Job.where(:is_hidden => false, :category => @category).recent.paginate(:page => params[:page], :per_page => 10)
+          @jobs = Job.where(:is_hidden => false, :category => @category).recent.paginate(:page => params[:page], :per_page => 5)
         end
     else
-      @jobs = Job.published.recent.paginate(:page => params[:page], :per_page => 15)
-  end
+      @jobs = Job.published.recent.paginate(:page => params[:page], :per_page => 5)
+    end
 
 
   end
