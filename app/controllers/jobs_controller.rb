@@ -1,10 +1,9 @@
 class JobsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy]
+  before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy, :star, :unstar]
 
    before_action :validate_search_key, only: [:search]
 
   def index
-
     if params[:category].present?
         @category = params[:category]
         if @category == t('th_all')
@@ -15,25 +14,7 @@ class JobsController < ApplicationController
     else
       @jobs = Job.published.recent.paginate(:page => params[:page], :per_page => 5)
     end
-
-
   end
-=begin
-    @jobs = case params[:order]
-            when 'by_company'
-              Job.published.company.paginate(:page => params[:page], :per_page => 15)
-            when 'by_category'
-              Job.published.category.paginate(:page => params[:page], :per_page => 15)
-            when 'by_lower_bound'
-              Job.published.order('wage_lower_bound DESC').paginate(:page => params[:page], :per_page => 15)
-            when 'by_upper_bound'
-              Job.published.order('wage_upper_bound DESC').paginate(:page => params[:page], :per_page => 15)
-            else
-              Job.published.recent.paginate(:page => params[:page], :per_page => 15)
-            end
-=end
-
-
 
   def show
     @job = Job.find(params[:id])
@@ -85,6 +66,27 @@ class JobsController < ApplicationController
       search_result = Job.published.ransack(@search_criteria).result(:distinct => true)
       @jobs = search_result.recent.paginate(:page => params[:page], :per_page => 5 )
     end
+  end
+
+  # star & unstar
+  def star
+    @job = Job.find(params[:id])
+
+    if !current_user.is_follower_of?(@job)
+      current_user.star!(@job)
+    end
+
+    redirect_to :back
+  end
+
+  def unstar
+    @job = Job.find(params[:id])
+
+    if current_user.is_follower_of?(@job)
+      current_user.unstar!(@job)
+    end
+
+    redirect_to :back
   end
 
   private

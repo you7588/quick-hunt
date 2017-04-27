@@ -3,6 +3,11 @@ Rails.application.routes.draw do
 
   # search
   resources :jobs do
+    member do
+      post :star
+      post :unstar
+    end
+
     collection do
       get :search
     end
