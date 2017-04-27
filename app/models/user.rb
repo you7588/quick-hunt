@@ -5,6 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :resumes
+  has_many :star_relationships
+  has_many :starred_jobs, :through => :star_relationships, :source => :job
 
   def admin?
     is_admin
