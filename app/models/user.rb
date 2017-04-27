@@ -11,4 +11,9 @@ class User < ApplicationRecord
   def admin?
     is_admin
   end
+
+  def is_applicant_of?(job)
+    starred_jobs.include?(job)
+  end
+
 end

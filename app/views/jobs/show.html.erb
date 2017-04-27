@@ -2,6 +2,15 @@
   <div class="col-md-12">
     <section id="job-info">
 
+      <!-- starred / star -->
+      <div>
+      <% if current_user && current_user.is_applicant_of?(@job) %>
+        <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+      <% else %>
+        <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
+      <% end %>
+      </div>
+
       <!-- logo -->
       <img class="job-logo" src='http://i.imgur.com/zVU8xTV.jpg'>
 
