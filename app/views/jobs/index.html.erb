@@ -47,15 +47,18 @@
 	          </div>
 	          <div class="col-sm-8">
 							<div class="title">
+								<!-- title -->
+								<span><%= link_to(job.title, job_path(job)) %></span>
 								<!-- starred / star -->
-								<span>
-									<% if current_user && current_user.is_follower_of?(job) %>
-										<%= link_to("", unstar_job_path(job), method: :post, class: "fa fa-star") %>
-									<% else %>
-										<%= link_to("", star_job_path(job), method: :post, class: "fa fa-star-o") %>
-									<% end %>
-								</span>
-	              <%= link_to(job.title, job_path(job)) %>
+								<% if current_user && current_user.is_follower_of?(job) %>
+									<%= link_to unstar_job_path(job), method: :post do %>
+										<sapn class="fa fa-star"></sapn>
+          				<% end %>
+								<% else %>
+									<%= link_to star_job_path(job), method: :post do %>
+										<sapn class="fa fa-star-o"></sapn>
+          				<% end %>
+								<% end %>
 	            </div>
 							<p>
 								<%= job.category %>
