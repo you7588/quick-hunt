@@ -1,47 +1,55 @@
-<table class="table table-boldered table-striped custab" >
-  <thead>
-      <tr>
-				<td><%= %></td>
-        <td><%= t('th_company') %></td>
-        <td><%= t('th_category') %></td>
-        <td><%= t('th_position') %></td>
-        <td><%= t('th_published') %></td>
-      </tr>
-  </thead>
+<section class="starred-jobs">
 
-  <% @jobs.each do |job| %>
-    <tr>
-			<td>
-				<!-- starred / star -->
-				<% if current_user && current_user.is_follower_of?(job) %>
-					<%= link_to unstar_job_path(job), method: :post do %>
-						<sapn class="fa fa-star"></sapn>
-					<% end %>
-				<% else %>
-					<%= link_to star_job_path(job), method: :post do %>
-						<sapn class="fa fa-star-o"></sapn>
-					<% end %>
-				<% end %>
-			</td>
-      <td>
-        <%= job.company %>
-      </td>
-      <td>
-        <%= job.category %>
-      </td>
-      <td>
-        <%= link_to(job.title, account_job_path(job)) %>
-      </td>
-      <td>
-          <%= job.created_at %>
-      </td>
-    </tr>
-  <% end %>
-</table>
+	<table class="table table-boldered table-striped custab" >
+	  <thead>
+	      <tr>
+					<td><%= %></td>
+	        <td><%= t('th_company') %></td>
+	        <td><%= t('th_category') %></td>
+	        <td><%= t('th_position') %></td>
+					<td><%= t('th_manage') %></td>
+	        <td><%= t('th_published') %></td>
+	      </tr>
+	  </thead>
 
-<!-- pagination -->
-<div class="col-md-10 col-md-offset-1 job-bottom">
-	<div class="text-center">
-		<%= will_paginate @jobs, renderer: BootstrapPagination::Rails %>
+	  <% @jobs.each do |job| %>
+	    <tr>
+				<td>
+					<!-- starred / star -->
+					<% if current_user && current_user.is_follower_of?(job) %>
+						<%= link_to unstar_job_path(job), method: :post do %>
+							<sapn class="fa fa-star"></sapn>
+						<% end %>
+					<% else %>
+						<%= link_to star_job_path(job), method: :post do %>
+							<sapn class="fa fa-star-o"></sapn>
+						<% end %>
+					<% end %>
+				</td>
+	      <td>
+	        <%= job.company %>
+	      </td>
+	      <td>
+	        <%= job.category %>
+	      </td>
+	      <td>
+	        <%= link_to(job.title, account_job_path(job)) %>
+	      </td>
+				<td>
+					<%= link_to(t('btn_job_apply'), new_job_resume_path(job), class: "btn btn-info btn-xs", method: :get) %>
+				</td>
+	      <td>
+	          <%= job.created_at %>
+	      </td>
+	    </tr>
+	  <% end %>
+	</table>
+
+	<!-- pagination -->
+	<div class="col-md-10 col-md-offset-1 job-bottom">
+		<div class="text-center">
+			<%= will_paginate @jobs, renderer: BootstrapPagination::Rails %>
+		</div>
 	</div>
-</div>
+
+</section>
