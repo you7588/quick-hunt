@@ -1,8 +1,8 @@
-<div class='pull-right'>
-  <%= link_to(t('btn_add'), new_admin_job_path, :class => 'btn btn-default' ) %>
+<div class='pull-right admin-btn-add'>
+  <%= link_to(t('btn_add'), new_admin_job_path, :class => 'btn btn-sm btn-default' ) %>
 </div>
 
-<br><br>
+<br>
 
 <table class="table table-boldered table-striped custab" >
   <thead>
@@ -48,6 +48,9 @@
   <% end %>
 </table>
 
-<div class="text-center">
-  <%= will_paginate @jobs %>
+<!-- pagination -->
+<div class="col-md-10 col-md-offset-1 job-bottom">
+	<div class="text-center">
+		<%= will_paginate @jobs, renderer: BootstrapPagination::Rails %>
+	</div>
 </div>
