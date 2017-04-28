@@ -89,6 +89,7 @@ en:
   language_switch: "Language Switch"
 
   # navbar dropdown menu
+  starred: "Starred Jobs"
   admin_panel: "Admin Panel"
   log_out: "Log Out"
 

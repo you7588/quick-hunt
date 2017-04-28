@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   # search
   resources :jobs do
+    # star & unstar
     member do
       post :star
       post :unstar
@@ -13,6 +14,11 @@ Rails.application.routes.draw do
     end
 
     resources :resumes
+  end
+
+  # view starred jobs
+  namespace :account do
+    resources :jobs
   end
 
   # fields
