@@ -16,9 +16,12 @@ Rails.application.routes.draw do
     resources :resumes
   end
 
-  # view starred jobs
+
   namespace :account do
+    # view starred jobs
     resources :jobs
+    # view job application history
+    resources :resumes
   end
 
   # fields

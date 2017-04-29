@@ -84,6 +84,7 @@ zh-CN:
 
   # navbar dropdown menu
   starred: "我的收藏"
+  history: "应聘纪录"
   admin_panel: "后台管理"
   log_out: "登出"
 
@@ -132,6 +133,7 @@ zh-CN:
   th_salary_range: "新资范围"
   th_manage: "管理"
   th_published: "发布日期"
+  th_published: "应聘日期"
   # buttons
   btn_add: "新增职缺"
   btn_sort: "排序"

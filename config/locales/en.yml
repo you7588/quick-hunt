@@ -90,6 +90,7 @@ en:
 
   # navbar dropdown menu
   starred: "Starred Jobs"
+  history: "Application History"
   admin_panel: "Admin Panel"
   log_out: "Log Out"
 
@@ -138,6 +139,7 @@ en:
   th_salary_range: "Salary Range"
   th_manage: "Manage"
   th_published: "Posted Date/Time"
+  th_published: "Submitted Date/Time"
   # buttons
   btn_add: "Add a Job"
   btn_sort: "Sort"

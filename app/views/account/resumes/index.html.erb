@@ -1,0 +1,37 @@
+<section class="history">
+
+  	<table class="table table-boldered table-striped custab" >
+  	  <thead>
+  	      <tr>
+  	        <td><%= t('th_company') %></td>
+  	        <td><%= t('th_category') %></td>
+  	        <td><%= t('th_position') %></td>
+  	        <td><%= t('th_published') %></td>
+  	      </tr>
+  	  </thead>
+
+  	  <% @resumes.each do |resume| %>
+  	    <tr>
+  	      <td>
+  	        <%= resume.job.company %>
+  	      </td>
+  	      <td>
+  	        <%= resume.job.category %>
+  	      </td>
+  	      <td>
+             <%= resume.job.title %>
+  	      </td>
+  	      <td>
+  	          <%= resume.created_at %>
+  	      </td>
+  	    </tr>
+  	  <% end %>
+  	</table>
+
+  <!-- pagination -->
+	<div class="col-md-10 col-md-offset-1 job-bottom">
+		<div class="text-center">
+			<%= will_paginate @jobs, renderer: BootstrapPagination::Rails %>
+		</div>
+	</div>
+</section>
